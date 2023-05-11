@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header>div{
+    display: flex;
+    align-items: center;
+    margin-left: 26px;
+}
+
+header>div>button{
+    height: 24px;
+    background-color: black;
+    border-style: none;
+}
+
+header>div>div>button{
+  height: 60px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+}
+header>div>div>button>label{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+}
+
+header>div>div>button>img{
+  height: 20px;
+  width: 20px;
+  margin: 3px;
+}
+#hamburger{
+    height: 20px;
+}
+
+#logoMuctRube{
+    height: 40px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+#photo-profile{
+  height: 36px;
+  width: 36px;
+  object-fit:cover;
+  margin-left: 40px;
+  margin-bottom: 5px;
+  margin-right: 40px;
+  border-radius: 20px;
+}
+
+#createvideo{
+  height: 24px;
+}
+
+
+main{
+    display: flex;
+}
+
+#menu{
+    position: fixed;
+    display: flex;
+    top: 65px;
+    left: 0;
+    width: 74px;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu>div>button{
+    height: 74px;
+    width: 64px;
+}
+
+button{
+    background-color:black;
+    border-radius: 10px;
+    border-style: none;
+}
+
+#menu>div>button:hover,
+header>div>div>button:hover{
+    background-color:rgb(34, 34, 34);
+}
+
+#menu>div>button>img{
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
+
+#menu>div>button>label, 
+header>div>div>button>label{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 19px;
+    color:white;
+}
+.video-list {
+    margin-top: 65px;
+    margin-left: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .video-post {
+    width: calc((100% - 10%*3) / 4); /* Рассчитываем ширину одного видео поста */
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .video-post:last-of-type {
+    margin-right: 0;
+  }
+  
+  .video-post a {
+    display: block;
+    position: relative;
+  }
+  
+  .video-post a div {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+  }
+  
+  .video-post a div img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .video-post h2,
+  .video-post p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .video-post h2 {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .video-post p {
+    color: #606060;
+  }
+  
+  @media screen and (max-width: 1199px) {
+    .video-post {
+      width: calc((100% - 10% * 2) / 5);
+      margin-right: 16px;
+    }
+  
+    .video-post:last-of-type {
+      margin-right: 0;
+    }
+  }
+  
+  @media screen and (max-width: 991px) {
+    .video-post {
+      width: calc((100% - 8% * 2) / 3);
+      margin-right: 8%;
+    }
+  
+    .video-post:last-of-type {
+      margin-right: 0;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .video-post {
+      width: calc((100% - 6% * 1) / 2);
+      margin-right: 6%;
+      margin-bottom: 10px;
+    }
+  
+    .video-post:last-of-type {
+      margin-right: 0;
+    }
+  }
+  
+  @media screen and (max-width: 479px) {
+    .video-post {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+.channel-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.channel-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit:cover;
+}
+
+.channel-name h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
