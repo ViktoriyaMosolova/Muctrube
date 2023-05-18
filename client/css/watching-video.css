@@ -5,7 +5,6 @@
 }
 
 header {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -69,6 +68,19 @@ header>div>div>button>img{
   border-radius: 20px;
 }
 
+.comment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+  .comment img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit:cover;
+  }
 #createvideo{
   height: 24px;
 }
@@ -76,6 +88,7 @@ header>div>div>button>img{
 
 main{
     display: flex;
+    flex-direction: row;
 }
 
 #menu{
@@ -127,55 +140,37 @@ header>div>div>button>label{
     line-height: 19px;
     color:white;
 }
-
-.video-list {
-    margin-top: 65px;
+#video-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-right: 100px;
+  }
+  
+  #video-block {
+    margin-right: 20px;
+  }
+  
+  #comments-block {
+  }
+  
+.video-content{
     margin-left: 100px;
+    max-width: 800px;
+}
+
+  .video-list {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+  }
+  .video-post {
     margin-right: 20px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    justify-content: left;
+    flex-direction: column;
+    right: 0;
   }
-  
-  .video-post {
-    flex-basis: calc(100% / 2 - 15px);
-    margin-right: 10px; /* добавляем отступ справа */
-  }
-  
-  @media (min-width: 360px) {
-    .video-post {
-      flex-basis: calc(100% - 20px);
-      margin-right: 15px; /* увеличиваем отступ справа для постов на больших экранах */
-    }
-  }
-
-
-  @media (min-width: 768px) {
-    .video-post {
-      flex-basis: calc(100% / 2 - 20px);
-      margin-right: 15px; /* увеличиваем отступ справа для постов на больших экранах */
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .video-post {
-      flex-basis: calc(100% / 3 - 25px);
-      margin-right: 20px; /* увеличиваем отступ справа для постов на очень больших экранах */
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .video-post {
-      flex-basis: calc(100% / 5 - 30px);
-      margin-right: 30px; /* увеличиваем отступ справа для постов на очень больших экранах */
-    }
-  }
-  
-  .video-post:last-child {
-    margin-right: 0; /* убираем отступ справа у последнего поста в каждом ряду */
-  }
-
 
 
   h3{
@@ -186,6 +181,15 @@ header>div>div>button>label{
     line-height: 14px;
     color: #FFFFFF;
   }
+
+#sty{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
 
   p{
     font-family: 'Roboto';
@@ -228,4 +232,11 @@ header>div>div>button>label{
   font-size: 16px;
   line-height: 1.2;
 }
-
+  @media screen and (max-width: 768px) {
+    .video-post {
+      display: none;
+    }
+    #video-content {
+      margin-left: 100px;
+    }
+  }
