@@ -8,7 +8,7 @@
     <link type="text/css" href="../css/menu.css" rel="stylesheet">
     <link type="text/css" href="../css/style-font-lbl-btn.css" rel="stylesheet">
 
-    <link type="text/css" href="../css/main.css" rel="stylesheet">
+    <link type="text/css" href="../css/profile.css" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -24,7 +24,7 @@
             <img id="logoMuctRube" src="..\img\Untitled_white1.png">
         </div>
         <div id="title">
-            <label>Главная</label>
+            <label>Профиль</label>
         </div>
         <div>
             <div>
@@ -57,19 +57,36 @@
                 </button>
             </div>
         </div>
-        <div class="video-list">
-            <div class="video-post">
-                <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">
-                    <div><img src="../img/Cat.jpg" alt="Превью видео"></div>
-                </a>
-                <div class="channel-info">
-                    <img src="../img/photoprofile.jpg" alt="Фото канала">
-                    <div class="channel-name">
-                        <h3>Котики котики котики...</h3>
-                        <p>Название канала</p>
+        <div id="profile-form">
+            <form>
+                <div class="form-group">
+                    <div class="photo-wrapper">
+                        <img id="photo-profile" src="../img/photoprofile.jpg">
+                    </div>
+                    <div class="profile-buttons">
+                        <button type="button">Изменить фото</button>
                     </div>
                 </div>
-            </div>
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="username">Логин</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="form-group">
+                    <button type="submit">Сохранить</button>
+                </div>
+                <div class="profile-buttons">
+                    <button href="login.html" type="button">Выйти</button>
+                    <button href="register.html" type="button">Удалить аккаунт</button>
+                </div>
+            </form>
         </div>
     </main>
 </body>

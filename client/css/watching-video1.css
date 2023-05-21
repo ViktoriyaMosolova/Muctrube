@@ -1,0 +1,156 @@
+main {
+  margin-left: 74px;
+  margin-top: 65px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#menu {
+  flex: 0 0 74px; /* фиксированная ширина */
+}
+
+#content {
+  flex: 1 1 0; /* растягиваемый контейнер */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#player {
+  flex: 2 1 70%; /* растягиваемый элемент */
+}
+
+#comments, #playlist {
+  flex: 1 1 30%; /* растягиваемые элементы */
+  /* margin-top: 20px; */
+}
+
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+  .comment img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit:cover;
+  }
+
+#video-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+  }
+  
+  #video-block {
+    margin-right: 20px;
+  }
+  
+  
+.video-content{
+    background-color:aqua; 
+    margin-left: 100px;
+    max-width: 900px;
+}
+
+  .video-list {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    background-color:blueviolet;
+  }
+  .video-post {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    right: 0;
+  }
+
+
+  h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+  }
+
+  #sty{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+#sty1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+#hueta{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+}
+
+  p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    
+    color: #A7A7A7;
+  }
+  .video-post a {
+    display: block;
+  }
+  
+  .video-post img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius:10px;
+  }
+
+
+.channel-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.channel-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit:cover;
+}
+
+.channel-name h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+}
+  @media screen and (max-width: 768px) {
+    .video-post {
+      display: none;
+    }
+    #video-content {
+      margin-left: 100px;
+    }
+  }

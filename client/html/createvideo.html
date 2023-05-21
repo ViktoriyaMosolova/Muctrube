@@ -8,7 +8,7 @@
     <link type="text/css" href="../css/menu.css" rel="stylesheet">
     <link type="text/css" href="../css/style-font-lbl-btn.css" rel="stylesheet">
 
-    <link type="text/css" href="../css/main.css" rel="stylesheet">
+    <link type="text/css" href="../css/createvideo.css" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -57,19 +57,16 @@
                 </button>
             </div>
         </div>
-        <div class="video-list">
-            <div class="video-post">
-                <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">
-                    <div><img src="../img/Cat.jpg" alt="Превью видео"></div>
-                </a>
-                <div class="channel-info">
-                    <img src="../img/photoprofile.jpg" alt="Фото канала">
-                    <div class="channel-name">
-                        <h3>Котики котики котики...</h3>
-                        <p>Название канала</p>
-                    </div>
-                </div>
-            </div>
+        <div id="create-video-form">
+            <form>
+                <label for="title">Заголовок</label>
+                <input type="text" id="title" name="title" required>
+                <label for="description">Описание</label>
+                <textarea id="description" name="description" required></textarea>
+                <label for="video">Видео</label>
+                <input type="file" id="video" name="video" accept="video/*" required>
+                <div><button type="submit">Отправить</button></div>
+            </form>
         </div>
     </main>
 </body>

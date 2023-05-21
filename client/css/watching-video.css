@@ -1,253 +1,171 @@
-* {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(0, 0, 0);
-}
-
-header {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 65px;
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-header>div{
-    display: flex;
-    align-items: center;
-    margin-left: 26px;
-}
-
-header>div>button{
-    height: 24px;
-    background-color: black;
-    border-style: none;
-}
-
-header>div>div>button{
-  height: 60px;
-  width: 80px;
+/* Стили для главного контейнера */
+main {
+  margin-left: 74px;
+  margin-top: 65px;
   display: flex;
-  justify-content: center;
-  align-items:center;
+  flex-wrap: wrap;
+}
+
+/* Стили для меню */
+#menu {
+  flex: 0 0 200px;
+  margin-right: 24px;
+}
+
+/* Стили для контента */
+#content {
+  flex: 1 1 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* Стили для плеера */
+#player {
+  flex: 2 1 30%;
+  /* max-width: 75%; */
+  display: flex;
   flex-direction: column;
 }
-header>div>div>button>label{
+
+#player {
+  flex: 2 1 70%; /* растягиваемый элемент */
+}
+
+
+/* #player iframe {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  flex-direction: column;
+  height: 100%;
+} */
+
+#player h2 {
+  font-size: 24px;
+  margin: 16px 0;
 }
 
-header>div>div>button>img{
-  height: 20px;
-  width: 20px;
-  margin: 3px;
-}
-#hamburger{
-    height: 20px;
-}
-
-#logoMuctRube{
-    height: 40px;
-    margin-bottom: 5px;
-    margin-left: 30px;
-}
-
-#photo-profile{
-  height: 36px;
-  width: 36px;
-  object-fit:cover;
-  margin-left: 40px;
-  margin-bottom: 5px;
-  margin-right: 40px;
-  border-radius: 20px;
-}
-
-.comment{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-  
-  .comment img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-    object-fit:cover;
-  }
-#createvideo{
-  height: 24px;
-}
-
-
-main{
-    display: flex;
-    flex-direction: row;
-}
-
-#menu{
-    position: fixed;
-    display: flex;
-    top: 65px;
-    left: 0;
-    width: 74px;
-    height: 100vh;
-    background-color: rgb(0, 0, 0);
-    flex-direction: column;
-    align-items: center;
-}
-
-#menu>div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#menu>div>button{
-    height: 74px;
-    width: 64px;
-}
-
-button{
-    background-color:black;
-    border-radius: 10px;
-    border-style: none;
-}
-
-#menu>div>button:hover,
-header>div>div>button:hover{
-    background-color:rgb(34, 34, 34);
-}
-
-#menu>div>button>img{
-    height: 20px;
-    width: 20px;
-    margin: 5px;
-}
-
-#menu>div>button>label, 
-header>div>div>button>label{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 19px;
-    color:white;
-}
-#video-content {
-    display: flex;
-    flex-direction: column;
-    margin-left: 150px;
-  }
-  
-  #video-block {
-    margin-right: 20px;
-  }
-  
-  #comments-block {
-  }
-  
-.video-content{
-    margin-left: 100px;
-    max-width: 900px;
-}
-
-  .video-list {
-    margin-right: 10px;
-    display: flex;
-    flex-direction: column;
-    right: 0;
-  }
-  .video-post {
-    margin-right: 20px;
-    display: flex;
-    flex-direction: row;
-    right: 0;
-  }
-
-
-  h3{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 14px;
-    color: #FFFFFF;
-  }
-
-  #sty{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 14px;
-    color: #FFFFFF;
-}#sty1{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    color: #FFFFFF;
-}
-
-#hueta{
-    display: flex;
-    flex-direction: row;
-    width: 800px;
-}
-
-  p{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    
-    color: #A7A7A7;
-  }
-  .video-post a {
-    display: block;
-  }
-  
-  .video-post img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius:10px;
-  }
-
-
+/* Стили для информации о канале */
 .channel-info {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
-  color: #ffffff;
+  margin-top: 16px;
+  padding: 16px 0;
+  border-top: 1px solid #ccc;
 }
 
 .channel-info img {
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  margin-right: 10px;
-  object-fit:cover;
+  margin-right: 16px;
 }
 
-.channel-name h3 {
-  margin: 0;
+.channel-info h3 {
   font-size: 16px;
-  line-height: 1.2;
+  margin-bottom: 4px;
 }
-  @media screen and (max-width: 768px) {
-    .video-post {
-      display: none;
-    }
-    #video-content {
-      margin-left: 100px;
-    }
-  }
+
+.channel-buttons button {
+  border: none;
+  background-color: #fff;
+  color: #606060;
+  font-size: 14px;
+  padding: 8px 16px;
+  margin-right: 8px;
+  border-radius: 2px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.channel-buttons button:hover {
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+/* Стили для комментариев */
+#comments {
+  flex: 1 1 25%;
+  margin-top: 20px;
+}
+
+#comments h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.comment img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.comment h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.comment p {
+  font-size: 14px;
+  color: #606060;
+  margin-top: 8px;
+}
+
+/* Стили для плейлиста */
+
+#playlist {
+  flex: 1 1 25%;
+  margin-top: 20px;
+}
+
+#playlist h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.video {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.video img {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  margin-right: 16px;
+}
+
+.video h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.video p {
+  font-size: 14px;
+  color: #606060;
+  margin-top: 8px;
+}
+
+/* Стили для кнопок
+button {
+  border: none;
+  background-color: #fff;
+  color: #606060;
+  font-size: 14px;
+  padding: 8px 16px;
+  margin-right: 8px;
+  border-radius: 2px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  cursor: pointer;
+  background-color: #f9f9f9;
+} */
+
+img {
+  object-fit: cover;
+}

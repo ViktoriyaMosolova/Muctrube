@@ -1,203 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link type="text/css" href="../css/watching-video.css" rel="stylesheet">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-        <title>MuctRube</title>
-        <!-- <link rel="icon" href="..\img\Untitled_white_icon.png"> -->
-    </head>
-    <body>
-        <header>
-            <div>
-                <button><img id="hamburger" src="..\img\hamburger.png"></button>
-                <img id="logoMuctRube" src="..\img\Untitled_white1.png">
-            </div>
-            <div>
-              <div>
-                <button>
-                  <img id="createvideo" src="..\img\icon-menu-createvideo.png">
-                  <label>Создать видео</label>
-                </button>
-              </div>
-              <img id="photo-profile" src="..\img\photoprofile.jpg">
-            </div>
-        </header>
-        <main>
-            <div id="menu">
-                <div>
-                    <button type="button" onclick="openMainPage()">
-                        <img id="icon-menu-main" src="..\img\icon-menu-main.png" alt="Иконка меню">
-                        <label>Главная</label>
-                    </button>
-                </div>
-                <div>
-                    <button type="button" onclick="openMainPage()">
-                        <img id="icon-menu-playlist" src="..\img\icon-menu-playlist.png" alt="Иконка меню">
-                        <label>Плейлисты</label>
-                    </button>
-                </div>
-                <div>
-                    <button type="button" onclick="openMainPage()">
-                        <img id="icon-menu-contact" src="..\img\icon-menu-contact.png" alt="Иконка меню">
-                        <label>Контакты</label>
-                    </button>
-                </div>
-            </div>
-            <div id="video-content">
-                <div id="video-block">
-                    <div style="margin: 10px 0;">
-                        <iframe width="800px" height="400px" src="https://www.youtube.com/embed/BleoYk_Eprs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <label margin="6px 0" id="sty1" font-size="20px">Название видео Название видео Название видео...</label>
-                    </div>
-                    <div id="hueta" style="margin: 10px 0;" class="channel-info">
-                        <div style="display: flex; align-items: center;">
-                          <img src="../img/photoprofile.jpg" alt="Фото канала" style="margin-right: 10px;">
-                          <div class="channel-name">
-                            <h3>Название канала</h3>
-                            <p style="width: 400px; word-wrap: break-word; margin-top:5px;">Подписаться</p>
-                          </div>
-                          <div style="margin-left: auto; display: flex; align-items: center;">
-                            <button id="sty" style="width: 80px; height: 40px; margin-right: 10px; border-radius:5px;  background-color: rgba(0, 255, 34, 0.8);">Нравится</button>
-                            <button id="sty" style="width: 80px; height: 40px; background-color: rgba(255, 0, 0, 0.8); border-radius:5px;">Не нравится</button>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div  margin-bottom="10px" id="comments-block">
-                  <h3 margin-top="5px" >Комментарии</h3>
-                  <div style="margin: 10px 0;" class="channel-info">
-                    <img src="../img/photoprofile.jpg" alt="Фото пользователя">
-                    <div id="sty" class="comment-info">
-                      <h4>help me...</h4>
-                      <input style="width: 600px; word-wrap: break-word; margin-top:5px; border-style:solid; border-color: white; border-radius: 6px;" placeholder=" тут ввод ебаного комментария" id="sty"></input>
-                    </div>
-                  </div>
-                  <div class="channel-info">
-                    <img src="../img/photoprofile.jpg" alt="Фото пользователя">
-                    <div id="sty" class="comment-info">
-                      <h4>help me...</h4>
-                      <p style="width: 600px; word-wrap: break-word;; margin-top:5px;">АбобаАбобаАбобаАбобаАбобаАбобаАбобаАбобаАбобаАбобаАбобаАбобаАбобАбобаАбобаАбобаАбобаАбобаАбобаАбобаАбобаАбобаАбобаАбобаАбобаАбобаа</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <div class="video-list">
-                <div class="video-post">
-                    <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">
-                        <div><img width="300px" style="margin:0 -10px;" src="../img/Cat.jpg" alt="Превью видео"></div>
-                      </a>
-                      <div class="channel-info">
-                        <div class="channel-name">
-                          <h3>Котики котики котики...</h3>
-                          <p>Название канала</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="video-post">
-                  <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">
-                      <div><img width="300px" style="margin:0 -10px;" src="../img/Cat.jpg" alt="Превью видео"></div>
-                    </a>
-                    <div class="channel-info">
-                      <div class="channel-name">
-                        <h3>Котики котики котики...</h3>
-                        <p>Название канала</p>
-                      </div>
-                    </div>
-              </div>
-              <div class="video-post">
-                <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">
-                    <div><img width="300px"  style="margin:0 -10px;" src="../img/Cat.jpg" alt="Превью видео"></div>
-                  </a>
-                  <div  class="channel-info">
-                    <div class="channel-name">
-                      <h3>Котики котики котики...</h3>
-                      <p>Название канала</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="video-post">
-              <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">
-                  <div><img width="300px" style="margin:0 -10px;" src="../img/Cat.jpg" alt="Превью видео"></div>
-                </a>
-                <div class="channel-info">
-                  <div class="channel-name">
-                    <h3>Котики котики котики...</h3>
-                    <p>Название канала</p>
-                  </div>
-                </div>
-          </div>
-          <div class="video-post">
-            <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">
-                <div><img width="300px" style="margin:0 -10px;" src="../img/Cat.jpg" alt="Превью видео"></div>
-              </a>
-              <div class="channel-info">
-                <div class="channel-name">
-                  <h3>Котики котики котики...</h3>
-                  <p>Название канала</p>
-                </div>
-              </div>
-        </div>
-        <div class="video-post">
-          <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">
-              <div><img width="300px"  style="margin:0 -10px;" src="../img/Cat.jpg" alt="Превью видео"></div>
-            </a>
-            <div  class="channel-info">
-              <div class="channel-name">
-                <h3>Котики котики котики...</h3>
-                <p>Название канала</p>
-              </div>
-            </div>
-      </div>
-      <div class="video-post">
-        <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">
-            <div><img width="300px" style="margin:0 -10px;" src="../img/Cat.jpg" alt="Превью видео"></div>
-          </a>
-          <div class="channel-info">
-            <div class="channel-name">
-              <h3>Котики котики котики...</h3>
-              <p>Название канала</p>
-            </div>
-          </div>
-    </div>
-    <div class="video-post">
-        <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">
-            <div><img width="300px" style="margin:0 -10px;" src="../img/Cat.jpg" alt="Превью видео"></div>
-          </a>
-          <div class="channel-info">
-            <div class="channel-name">
-              <h3>Котики котики котики...</h3>
-              <p>Название канала</p>
-            </div>
-          </div>
-    </div>
-    <div class="video-post">
-      <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">
-          <div><img width="300px"  style="margin:0 -10px;" src="../img/Cat.jpg" alt="Превью видео"></div>
-        </a>
-        <div  class="channel-info">
-          <div class="channel-name">
-            <h3>Котики котики котики...</h3>
-            <p>Название канала</p>
-          </div>
-        </div>
-  </div>
-  <div class="video-post">
-    <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">
-        <div><img width="300px" style="margin:0 -10px;" src="../img/Cat.jpg" alt="Превью видео"></div>
-      </a>
-      <div class="channel-info">
-        <div class="channel-name">
-          <h3>Котики котики котики...</h3>
-          <p>Название канала</p>
-        </div>
-      </div>
-</div>
 
-            </div>
-        </main>
-    </body>
+<head>
+	<meta charset="UTF-8">
+	<link type="text/css" href="../css/common.css" rel="stylesheet">
+	<link type="text/css" href="../css/header.css" rel="stylesheet">
+	<link type="text/css" href="../css/menu.css" rel="stylesheet">
+	<link type="text/css" href="../css/style-font-lbl-btn.css" rel="stylesheet">
+
+	<link type="text/css" href="../css/watching-video.css" rel="stylesheet">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<title>MuctRube</title>
+	<!-- <link rel="icon" href="..\img\Untitled_white_icon.png"> -->
+</head>
+
+<body>
+	<header>
+		<div>
+			<button><img id="hamburger" src="..\img\hamburger.png"></button>
+			<img id="logoMuctRube" src="..\img\Untitled_white1.png">
+		</div>
+		<div>
+			<div>
+				<button onclick="location.href='createvideo.html'" img="..\img\icon-menu-createvideo.png">
+					<img id="createvideo" src="..\img\icon-menu-createvideo.png">
+					<label>Создать видео</label>
+				</button>
+			</div>
+			<img onclick="location.href='profile.html'" id="photo-profile" src="..\img\photoprofile.jpg">
+		</div>
+		<main>
+			<div id="menu">
+				<div>
+					<button onclick="location.href='main.html'" type="button">
+						<img id="icon-menu-main" src="..\img\icon-menu-main.png" alt="Иконка меню">
+						<label>Главная</label>
+					</button>
+				</div>
+				<div>
+					<button onclick="location.href='playlist.html'" type="button">
+						<img id="icon-menu-playlist" src="..\img\icon-menu-playlist.png" alt="Иконка меню">
+						<label>Плейлисты</label>
+					</button>
+				</div>
+				<div>
+					<button onclick="location.href='contact.html'" type="button">
+						<img id="icon-menu-contact" src="..\img\icon-menu-contact.png" alt="Иконка меню">
+						<label>Контакты</label>
+					</button>
+				</div>
+			</div>
+			<div id="content">
+				<div id="player">
+					<iframe src="https://www.youtube.com/embed/BleoYk_Eprs" title="YouTube video player" frameborder="0"
+						allowfullscreen></iframe>
+					<label margin="6px 0" id="sty1" font-size="20px">Название видео Название видео Название...</label>
+					<div class="channel-info">
+						<img src="..\img\photoprofile.jpg" alt="Логотип канала">
+						<div class="channel-text">
+							<label>Название вашего канала</label>
+							<div class="channel-buttons">
+								<button>Подписаться</button>
+								<button>Нравится</button>
+								<button>Не нравится</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="comments">
+					<h2>Комментарии</h2>
+					<ul>
+						<li class="comment">
+							<img src="..\img\photoprofile.jpg" alt="Фото комментатора">
+							<div class="comment-text">
+								<label>Имя комментатора</label>
+								<label>Текст комментария</label>
+							</div>
+						</li>
+						<li class="comment">
+							<img src="..\img\photoprofile.jpg" alt="Фото комментатора">
+							<div class="comment-text">
+								<label>Имя комментатора</label>
+								<label>Текст комментария</label>
+							</div>
+						</li>
+						<!-- Добавьте сколько угодно комментариев -->
+					</ul>
+				</div>
+				<div id="playlist">
+					<h2>Видео в плейлисте</h2>
+					<ul>
+						<li class="video">
+							<video src="https://youtu.be/1DJIClmpA-I"></video>
+							<div class="video-text">
+								<label>Название вашего видео</label>
+								<label>Описание видео</label>
+							</div>
+						</li>
+						<li class="video">
+							<video src="https://youtu.be/1DJIClmpA-I"></video>
+							<div class="video-text">
+								<label>Название вашего видео</label>
+								<label>Описание видео</label>
+							</div>
+						</li>
+						<!-- Добавьте сколько угодно видео -->
+					</ul>
+				</div>
+			</div>
+		</main>
+</body>
+
 </html>

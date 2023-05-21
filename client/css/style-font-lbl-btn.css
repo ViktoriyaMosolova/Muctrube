@@ -1,0 +1,20 @@
+#menu>div>button, 
+header>div>div>button{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 17px;
+    color:white;
+}
+
+#menu>div>button:hover,
+header>div>div>button:hover{
+    background-color:rgb(34, 34, 34);
+}
+
+label{
+    font-family: 'Roboto';
+    font-style:normal;
+    color:white;
+}

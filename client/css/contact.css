@@ -1,0 +1,39 @@
+main {
+  margin-left: 74px;
+  margin-top: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+#menu {
+  flex-shrink: 0;
+  width: 74px;
+}
+
+#contacts {
+  margin: 20%;
+}
+
+#contacts label {
+  font-weight: lighter;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+#contacts ul {
+  list-style: none;
+}
+
+#contacts li {
+  margin: 10px 0;
+}
+
+
+#contacts a:hover label {
+  color: rgb(255, 0, 0);
+}
